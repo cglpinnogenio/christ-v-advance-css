@@ -1,2 +1,2 @@
 # cglp-html-static
-Created with CodeSandbox
+created by Christy Jose
