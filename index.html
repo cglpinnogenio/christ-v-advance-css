@@ -1,12 +1,653 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Static Template</title>
-  </head>
-  <body>
-    <h1>This is a static template, there is no bundler or bundling involved!</h1>
-  </body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&family=Montserrat&family=Poppins&family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/e6019d3038.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+ <div class="wrapper">
+   <div class="page page-one">
+     <div class="navigation">
+        <div class="navbar-one">
+          <div class="selecter">
+            <select name="LANGUAGE" class="lang">
+              <option value="English">ENG</option>
+              <option value="French"> FRENCH </option>
+              <option value="German">GERMAN</option>
+              <option value="Spanish">SPANISH</option>
+              <option value="Italics">ITALICS</option>
+            </select>
+            <select name="currency" class="currency">
+              <option value="DOLLAR">USD</option>
+              <option value="RUPEE">RUPEE</option>
+              <option value="DINAR">DINAR</option>
+              <option value="SINGAPORE">SIN.DOLLAR</option>
+              <option value="SINGAPORE">AUS.DOLLAR</option>
+            </select>
+          </div>
+          <div class="nav_items">
+             <span class="icon"><i class="fa-regular fa-user fa-2x"></i></span>
+             <span class="label">My Profile</span>
+             <span class="icon cart"><i class="fa-solid fa-cart-shopping fa-2x"></i></span>
+             <img src="./images/number-circle-two-fill-pngrepo-com.png" class="number">
+             <span class="label">Items</span>
+             <span class="label dollar">$0.00</span>
+             <span class="icon"><i class="fa-solid fa-magnifying-glass fa-2x"></i></span>
+          </div>
+        </div>
+        <div class="navbar-two"> 
+          <div><img src="./images/FOOTER.png" class="e-com"></div>
+          <div class="list">
+            <span class="HOME">HOME</span> 
+            <span class="HOME">BAG</span> 
+            <span class="HOME">SNEAKERS</span> 
+            <span class="HOME">BELT</span> 
+            <span class="HOME">CONTACTS</span>
+          </div>
+        </div>
+     </div>
+     <div class="content">
+        <div class="image">
+          <img src="./images/Promotion Image.png"  class="hero-image">
+          <span class="flash_sale">Super Flash Sales<br>50% Off</span>
+        </div>
+        </div>
+       <div class="products">
+          <div class="bag-div">
+            <img src="./images/banner.png" class="bag">
+          </div>
+
+          <div>
+            <div class="shoe-div">
+              <img src="./images/image Product.png" class="shoe">
+            </div>
+            <div class="name name-one">FS - Nike Air<br> Max 270 React...</div>
+            <div class="price-details price-details-one">
+              <span class="old-price"><s>$534,33</s></span>
+              <span class="discount">24% Off</span>
+            </div>
+            <div class="price price-one">$299,43</div>
+          </div>
+
+          <div>
+             <div class="red-div">
+              <img src="./images/red shoe.png" class="red">
+             </div>
+             <div class="name name-two">FS - Nike Air<br> Max 270 React...</div>
+             <div class="price-details price-details-two">
+               <span class="old-price"><s>$534,33</s></span>
+               <span class="discount">24% Off</span>
+             </div>
+             <div class="price price-two">$299,43</div>
+          </div>
+        </div>
+      </div>
+     </div>
+    </div>
+
+   <!--mobile responsive-->
+    <div class="wrapper-mob">
+      <div class="nav-mob">
+        <div class="mob-items">
+          <div class="clock">
+            <img src="./images/Time Style.png"/>
+          </div>
+          <div class="range">
+            <img src="./images/Mobile Signal.png"/>
+            <img src="./images/Wifi.png"/>
+            <img src="./images/Battery.png"/>
+          </div>
+        </div>
+        <div class="search-bar">
+          <div>
+            <span><i class="fa-solid fa-magnifying-glass fa-4x" id="icon-mob"></i></span>
+            <span><input type="text" placeholder="search" class="input-two"></span>
+          </div>  
+          <img src="./images/love.png" class="heart"/>
+          <img src="./images/Notification.png"  class="heart"/>
+        </div>
+      </div>
+  
+      <div class="image-mob"> 
+        <img src="./images/Offer Banner.png"  class="hero-image-two"/>
+      </div>
+  
+      <div class="ellips">
+        <img src="./images/Ellipse 117.png"/>
+        <img src="./images/Ellipse 117.png"/>
+        <img src="./images/Ellipse 115.png"/>
+        <img src="./images/Ellipse 117.png"/>
+        <img src="./images/Ellipse 117.png"/>
+      </div>
+  
+      <div class="labels-mob">
+        <div><label class="category">Category</label></div>
+        <div><label class="more-category">More Category</label></div>
+      </div>
+  
+      <div class="product-icons">
+        <div class="mob-product"><img src="./images/Product Icon.png"/><label class="icon-label">Man Shirt</label></div>
+        <div class="mob-product"><img src="./images/Product Icon-2.png"/><label class="icon-label">Dress</label></div>
+        <div class="mob-product"><img src="./images/Product Icon-3.png"/><label class="icon-label">Man Work Equipment</label></div>
+        <div class="mob-product"><img src="./images/Product Icon-4.png"/><label class="icon-label">Woman Bag</label></div>
+      </div>
+  
+      <div class="container-mob">
+        <div class="child">
+          <div class="image">
+            <img src="./images/image Product-mob.png" alt="nike bag" class="material"/>
+          </div>
+        <div class="whole">
+          <div class="details">
+            <div class="name name-three">Nike Air Max</div>
+            <div  class="rating">
+              <img src="./images/STAR (3).png" alt="image of star" class="star" />
+              <img src="./images/STAR (3).png" alt="image of star" class="star" />
+              <img src="./images/STAR (3).png" alt="image of star" class="star" />
+              <img src="./images/STAR (3).png" alt="image of star" class="star" />
+              <img src="./images/Unfilledstar (1).png" alt="image of star" class="star" />
+             
+            </div>
+            <div class="price-details">
+              <div class="price  price-three">$299,43</div>
+              <div class="old-price old-price-two"><s>$534,33</s></div>
+              <div class="discount discount-two">24% off</div>
+            </div>
+          </div>
+         </div>
+        </div>
+        <div class="child">
+          <div class="image">
+            <img src="./images/image Product-mob2.png" alt="nike bag" class="material"/>
+          </div>
+        <div class="whole">
+          <div class="details">
+            <div class="name name-three">Nike Air Max</div>
+            <div  class="rating">
+              <img src="./images/STAR (3).png" alt="image of star" class="star" />
+              <img src="./images/STAR (3).png" alt="image of star" class="star" />
+              <img src="./images/STAR (3).png" alt="image of star" class="star" />
+              <img src="./images/STAR (3).png" alt="image of star" class="star" />
+              <img src="./images/Unfilledstar (1).png" alt="image of star" class="star" />
+            </div>
+            <div class="price-details">
+              <div class="price  price-three">$299,43</div>
+              <div class="old-price old-price-two"><s>$534,33</s></div>
+              <div class="discount discount-two">24% off</div>
+            </div>
+          </div>
+         </div>
+        </div>
+      </div>
+      <div class="labels-mobtwo">
+        <div><label class="mega-sale">Mega Sale</label></div>
+        <div><label class="see-more">See More</label></div>
+      </div>
+  
+      <div class="container-mob-two">
+        <div class="child">
+          <div class="image">
+            <img src="./images/brwnbag-mob.png" alt="nike bag" class="material"/>
+          </div>
+        <div class="whole">
+          <div class="details">
+            <div class="name name-three">Nike Air Max</div>
+            <div  class="rating">
+              <img src="./images/STAR (3).png" alt="image of star" class="star" />
+              <img src="./images/STAR (3).png" alt="image of star" class="star" />
+              <img src="./images/STAR (3).png" alt="image of star" class="star" />
+              <img src="./images/STAR (3).png" alt="image of star" class="star" />
+              <img src="./images/Unfilledstar (1).png" alt="image of star" class="star" />
+             
+            </div>
+            <div class="price-details">
+              <div class="price  price-three">$299,43</div>
+              <div class="old-price old-price-two"><s>$534,33</s></div>
+              <div class="discount discount-two">24% off</div>
+            </div>
+          </div>
+         </div>
+        </div>
+        <div class="child">
+          <div class="image">
+            <img src="./images/canvas-mob.png" alt="nike bag" class="material"/>
+          </div>
+        <div class="whole">
+          <div class="details">
+            <div class="name name-three">Nike Air Max</div>
+            <div  class="rating">
+              <img src="./images/STAR (3).png" alt="image of star" class="star" />
+              <img src="./images/STAR (3).png" alt="image of star" class="star" />
+              <img src="./images/STAR (3).png" alt="image of star" class="star" />
+              <img src="./images/STAR (3).png" alt="image of star" class="star" />
+              <img src="./images/Unfilledstar (1).png" alt="image of star" class="star" />
+            </div>
+            <div class="price-details">
+              <div class="price  price-three">$299,43</div>
+              <div class="old-price old-price-two"><s>$534,33</s></div>
+              <div class="discount discount-two">24% off</div>
+            </div>
+          </div>
+         </div>
+        </div>
+      </div>
+  
+      <div class="image-two-mob"> 
+        <img src="./images/Recomended Product Banner.png" class="banner-img-mob">
+      </div>
+    </div>
+    <!--mobile responsive-->
+
+    <div class="page page-two">
+      <div class="title">BEST SELLER</div>
+      <div class="navbar-three">
+        <div class="logo">All</div>
+        <div class="logo">Bags</div>
+        <div class="logo">Sneakers</div>
+        <div class="logo">Belts</div>
+        <div class="logo">Sunglasses</div>
+      </div>
+       <div class="container">
+          <div class="child">
+            <div class="image">
+             <div class="label_two">HOT</div>
+             <img src="./images/blck shoe.png" alt="nike shoe" class="material"/>
+            </div>
+            <div class="whole">
+             <div class="details">
+                <div class="name name-three">Nike Shoe Airmax</div>
+                <div class="rating">
+                  <img src="./images/STAR (3).png" alt="image of star" class="star" />
+                  <img src="./images/STAR (3).png" alt="image of star" class="star" />
+                  <img src="./images/STAR (3).png" alt="image of star" class="star" />
+                  <img src="./images/STAR (3).png" alt="image of star" class="star" />
+                  <img src="./images/Unfilledstar (1).png" alt="image of star" class="star" />
+                </div>
+                  <div class="price-details">
+                    <div class="price  price-three">$299,43</div>
+                    <div class="old-price old-price-two"><s>$534,33</s></div>
+                    <div class="discount discount-two">24% off</div>
+                  </div>
+            </div>
+           </div>      
+         </div>
+         <div class="child">
+           <div class="image">
+             <img src="./images/brwn bag.png" alt="nike bag" class="material"/>
+           </div>
+         <div class="whole">
+           <div class="details">
+             <div class="name name-three">Nike Air Max</div>
+             <div  class="rating">
+               <img src="./images/STAR (3).png" alt="image of star" class="star" />
+               <img src="./images/STAR (3).png" alt="image of star" class="star" />
+               <img src="./images/STAR (3).png" alt="image of star" class="star" />
+               <img src="./images/STAR (3).png" alt="image of star" class="star" />
+               <img src="./images/Unfilledstar (1).png" alt="image of star" class="star" />
+              
+             </div>
+             <div class="price-details">
+               <div class="price  price-three">$299,43</div>
+               <div class="old-price old-price-two"><s>$534,33</s></div>
+               <div class="discount discount-two">24% off</div>
+             </div>
+           </div>
+         </div>
+         </div>
+         <div class="child">
+           <div class="image">
+             <img src="./images/nill img.png" alt="nike hand bag" class="material"/>
+           </div>
+         <div class="whole">
+           <div class="details">
+             <div class="name name-three">Nike Air Max</div>
+             <div  class="rating">
+               <img src="./images/STAR (3).png" alt="image of star" class="star" />
+               <img src="./images/STAR (3).png" alt="image of star" class="star" />
+               <img src="./images/STAR (3).png" alt="image of star" class="star" />
+               <img src="./images/STAR (3).png" alt="image of star" class="star" />
+               <img src="./images/Unfilledstar (1).png" alt="image of star" class="star" />
+             </div>
+             <div class="price-details">
+               <div class="price  price-three">$299,43</div>
+               <div class="old-price old-price-two"><s>$534,33</s></div>
+               <div class="discount discount-two">24% off</div>
+             </div>
+           </div>
+         </div>
+         </div>
+         <div class="child">
+           <div class="image">
+             <img src="./images/blu shoe.png" alt="nike shoe" class="material"/>
+           </div>
+         <div class="whole">
+           <div class="details">
+             <div class="name name-three">Nike Shoe IN</div>
+             <div  class="rating">
+               <img src="./images/STAR (3).png" alt="image of star" class="star" />
+               <img src="./images/STAR (3).png" alt="image of star" class="star" />
+               <img src="./images/STAR (3).png" alt="image of star" class="star" />
+               <img src="./images/STAR (3).png" alt="image of star" class="star" />
+               <img src="./images/Unfilledstar (1).png" alt="image of star" class="star" />
+               
+             </div>
+             <div class="price-details">
+               <div class="price  price-three">$299,43</div>
+               <div class="old-price old-price-two"><s>$534,33</s></div>
+               <div class="discount discount-two">24% off</div>
+             </div>
+           </div>
+         </div>
+         </div>
+         <div class="child">
+           <div class="image">
+             <img src="./images/shoe ylow.png" alt="nike shoe" class="material"/>
+           </div>
+         <div class="whole">
+           <div class="details">
+             <div class="name name-three">Nike Shoe Airmax</div>
+             <div  class="rating">
+               <img src="./images/STAR (3).png" alt="image of star" class="star" />
+               <img src="./images/STAR (3).png" alt="image of star" class="star" />
+               <img src="./images/STAR (3).png" alt="image of star" class="star" />
+               <img src="./images/STAR (3).png" alt="image of star" class="star" />
+               <img src="./images/Unfilledstar (1).png" alt="image of star" class="star" />
+  
+             </div>
+             <div class="price-details">
+               <div class="price  price-three">$299,43</div>
+               <div class="old-price old-price-two"><s>$534,33</s></div>
+               <div class="discount discount-two">24% off</div>
+             </div>
+           </div>
+         </div>
+         </div>
+         <div class="child">
+           <div class="image">
+             <img src="./images/ylw shoe.png" alt="nike shoe" class="material"/>
+           </div>
+           <div class="whole">
+            <div class="details">
+             <div class="name name-three">Nike Shoe IN</div>
+             <div  class="rating">
+               <img src="./images/STAR (3).png" alt="image of star" class="star" />
+               <img src="./images/STAR (3).png" alt="image of star" class="star" />
+               <img src="./images/STAR (3).png" alt="image of star" class="star" />
+               <img src="./images/STAR (3).png" alt="image of star" class="star" />
+               <img src="./images/Unfilledstar (1).png" alt="image of star" class="star" />
+             </div>
+             <div class="price-details">
+               <div class="price  price-three">$299,43</div>
+               <div class="old-price old-price-two"><s>$534,33</s></div>
+               <div class="discount discount-two">24% off</div>
+             </div>
+           </div>
+         </div>
+        </div>
+         <div class="child">
+           <div class="image">
+             <img src="./images/ylw shoe bck.png" alt="nike shoe" class="material"/>
+           </div>
+         <div class="whole">
+           <div class="details">
+             <div class="name name-three">Nike Shoe Airmax</div>
+             <div  class="rating">
+               <img src="./images/STAR (3).png" alt="image of star" class="star" />
+               <img src="./images/STAR (3).png" alt="image of star" class="star" />
+               <img src="./images/STAR (3).png" alt="image of star" class="star" />
+               <img src="./images/STAR (3).png" alt="image of star" class="star" />
+               <img src="./images/Unfilledstar (1).png" alt="image of star" class="star" />
+             </div>
+             <div class="price-details">
+               <div class="price  price-three">$299,43</div>
+               <div class="old-price old-price-two"><s>$534,33</s></div>
+               <div class="discount discount-two">24% off</div>
+             </div>
+           </div>
+         </div>
+         </div>
+         <div class="child">
+             <div class="image">
+               <img src="./images/blu shoe.png" alt="nike shoe" class="material"/>
+             </div>
+           <div class="whole">
+             <div class="details">
+                <div class="name name-three">Nike Shoe Airmax</div>
+                <div  class="rating">
+                 <img src="./images/STAR (3).png" alt="image of star" class="star" />
+                 <img src="./images/STAR (3).png" alt="image of star" class="star" />
+                 <img src="./images/STAR (3).png" alt="image of star" class="star" />
+                 <img src="./images/STAR (3).png" alt="image of star" class="star" />
+                 <img src="./images/Unfilledstar (1).png" alt="image of star" class="star" />
+                </div>
+                <div class="price-details">
+                  <div class="price price-three">$299,43</div>
+                  <div class="old-price old-price-two"><s>$534,33</s></div>
+                  <div class="discount discount-two">24% off</div>
+                </div>
+              </div>
+            </div>
+          </div>
+         </div>
+       </div>
+      <div><a href="#" class="load_more">Load More</a></div> 
+    </div>
+
+    <!--mobile responsive-->
+    <div class="footer-navbar">
+      <div class="ICONS"><i class="fa-solid fa-house fa-2x"></i><label>Home</label></div>
+      <div class="ICONS"><i class="fa-solid fa-magnifying-glass fa-2x"></i><label>Explore</label></div>
+      <div class="ICONS"><i class="fa-solid fa-cart-shopping fa-2x"></i><label>Cart</label></div>
+      <div class="ICONS"><i class="fa-solid fa-tag fa-2x"></i><label>Offers</label></div>
+      <div class="ICONS"><i class="fa-regular fa-user fa-2x"></i><label>Account</label></div>
+    </div>
+    <!--mobile responsive-->
+
+    <div class="page page-three">
+      <div class="blue_page">
+        <div class="content-two">
+          <span class="adidas">Adidas Men Running Sneakers <br>
+          <span class="perform">Performance and design. Taken Right to edge.<br></span>
+          <span class="shop">SHOPE NOW</span>
+        </div>
+        <div class="blue-shoe">
+          <img src="./images/BLUE SHOE.png" class="BLUE">
+        </div>
+      </div>
+    </div>
+
+
+    <div class="page page-four">
+      <div class="techical-support">
+        <div class="support">
+          <div class="content-three">
+            <img src="./images/shipping.jpg" class="red_img"/>
+            <span class="service">FREE SHIPPING</span>
+            <span class="lorem">Lorem ipsum dolor, sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+          </div>
+          <div class="content-three">
+            <img src="./images/refund.jpg" class="red_img"/>
+            <span  class="service">100% REFUND</span>
+            <span class="lorem">Lorem ipsum dolor, sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.</span>
+          </div>
+          <div class="content-three">
+            <img src="./images/support.jpg" class="red_img"/>
+            <span  class="service">SUPPORT 24/7</span>
+            <span class="lorem">Lorem ipsum dolor, sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur.
+              Lorem ipsum dolor.
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="techical-support">
+        <div class="news">LATEST NEWS</div>
+        <div class="words">
+          <div class="entire">
+            <img src="./images/Nike_logo.jpg"  class="black_img"/>
+            <div class="scentence">
+              <span class="date">01 Jan 2015</span><br>
+              <span class="main">Fashion Industry</span>
+              <span class="lorem-two">
+               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              </span>
+            </div>
+          </div>
+          <div class="entire">
+            <img src="./images/figma-1-logo 1.jpg"  class="black_img"/>
+            <div class="scentence">
+             <span class="date">01 Jan 2015</span><br>
+             <span class="main">Best Design Tools</span>
+             <span class="lorem-two">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+             </span>
+            </div>
+          </div>
+          <div class="entire">
+            <img src="./images/kronos-logo.png"  class="black_img"/>
+            <div class="scentence">
+              <span class="date">01 Jan 2015</span><br>
+              <span class="main">HR Community</span>
+              <span class="lorem-two">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="top-footer">
+        <div class="feature">FEATURED PRODUCTS</div>
+        <div class="content-four">
+          <div class="PRODUCT">
+             <div>
+               <img src="./images/Rectangle.jpg"  class="rectangle"/>
+             </div>
+             <div class="product-details">
+               <span class="swade">Blue Swade Nike <br> Sneakers</span><br>
+               <span>
+                 <img src="./images/STAR (3).png" class="star"/>
+                 <img src="./images/STAR (3).png" class="star"/>
+                 <img src="./images/STAR (3).png" class="star"/>
+                 <img src="./images/STAR (3).png" class="star"/>
+                 <IMG src="./images/Unfilledstar (1).png" class="star"/><br>
+               </span>
+               <span class="new_price">$499 <span class="old-price"><s>$599</s></span></span>
+             </div>
+          </div>
+          <div class="PRODUCT">
+            <div>
+              <img src="./images/Rectangle.jpg"  class="rectangle"/>
+            </div>
+            <div class="product-details">
+              <span class="swade">Blue Swade Nike <br> Sneakers</span><br>
+              <span>
+                <img src="./images/STAR (3).png" class="star"/>
+                <img src="./images/STAR (3).png" class="star"/>
+                <img src="./images/STAR (3).png" class="star"/>
+                <img src="./images/STAR (3).png" class="star"/>
+                <IMG src="./images/Unfilledstar (1).png" class="star"/><br>
+              </span>
+              <span class="new_price">$499 <span class="old-price"><s>$599</s></span></span>
+            </div>
+          </div>
+        <div class="PRODUCT">
+        <div>
+         <img src="./images/Rectangle.jpg"  class="rectangle"/>
+        </div>
+        <div class="product-details">
+          <span class="swade">Blue Swade Nike <br> Sneakers</span><br>
+          <span>
+            <img src="./images/STAR (3).png" class="star"/>
+            <img src="./images/STAR (3).png" class="star"/>
+            <img src="./images/STAR (3).png" class="star"/>
+            <img src="./images/STAR (3).png" class="star"/>
+            <IMG src="./images/Unfilledstar (1).png" class="star"/><br>
+          </span>
+          <span class="new_price">$499 <span class="old-price"><s>$599</s></span></span>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="write_area">
+      <span><input type="text" placeholder="search quary...." class="input"></span>
+      <span><button type="search" value="search">search</button></span>
+     </div> 
+    </div>
+
+
+    <div class="page page-five">
+      <div class="blue_page_two">
+        <div class="half-one">
+            <div class="footer_content">
+              <span><img src="./images/FOOTER.png" class="logo-two"></span>
+              <span class="content-five">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Nihil nesciunt rerum, aliquam magni minus voluptate harum quod impedit perferendis id ea.
+              </span>
+            </div>
+            <div class="footer_content">
+              <span class="follow_us">Follow Us</span>
+              <span class="content-five">Since the 1500s, when an unknown <br>printer took a gallery of type and<br> scrambled.
+              </span>
+              <span class="face"><img src="./images/facebook (2).png" class="facebook"><img src="./images/twitter (1).png" class="facebook"></span>
+            </div>
+            <div class="footer_content">
+              <span class="follow_us">Contact Us</span>
+              <span class="content-five">E-Com 4578<br>Marmora Road<br>Glasgow D04 89GR.
+              </span>
+            </div>
+        </div>
+
+        <div class="half-two">
+          <div class="footer_content">
+            <span class="follow_us">Information</span>
+            <span class="content-five">About Us<br>
+              Information<br>
+              Privacy Policy<br>
+              Terms & Conditions.
+            </span>
+          </div>
+          <div class="footer_content">
+            <span class="follow_us">Service</span>
+            <span class="content-five">About Us<br>
+              Information<br>
+              Privacy Policy<br>
+              Terms & Conditions.
+            </span>
+          </div>
+          <div class="footer_content">
+            <span class="follow_us">My Account</span>
+            <span class="content-five">About Us<br>
+              Information<br>
+              Privacy Policy<br>
+              Terms & Conditions.
+            </span>
+          </div>
+          <div class="footer_content">
+            <span class="follow_us">Our Offers</span>
+            <span class="content-five">About Us<br>
+              Information<br>
+              Privacy Policy<br>
+              Terms & Conditions.
+            </span>
+          </div>
+          </div>
+          <div class="horizontal"><hr width="1180px" size="04" color="white"></hr></div>
+          <div class="cards">
+            <img src="images/Brands.png" class="brand">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
 </html>
