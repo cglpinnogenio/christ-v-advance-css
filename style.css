@@ -18,13 +18,14 @@
   .navbar-one {
     width: 100%;
     display: flex;
-    gap: 37rem;
+    justify-content: space-between;
     align-items: baseline;
-    padding-left: 5rem;
-    position: relative;
+    border-bottom: #fafafb solid 2px;
+    padding-bottom: 1rem;
+    padding-left: 3rem;
   }
   .selecter {
-    width: 40%;
+    width: 100%;
   }
   .lang,
   .currency {
@@ -35,9 +36,9 @@
     margin: 0px 5px;
   }
   .nav_items {
-    width: 80%;
+    width: 100%;
     display: flex;
-    gap: 6rem;
+    justify-content: space-evenly;
     font-size: 3rem;
     font-family: 'Montserrat', sans-serif;
   }
@@ -51,21 +52,49 @@
   .dollar {
     opacity: 0.4;
   }
+  .cart {
+    padding-top: 2rem;
+  }
+  .cart-div {
+    position: relative;
+  }
   .number {
-    width: 1rem;
-    height: 1rem;
+    width: 2rem;
+    height: 2rem;
+    background-color: #ff0000;
+    color: #ffffff;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
-    top: 20%;
-    right: 28%;
+    top: 0.8rem;
+    left: 1.2rem;
   }
   .navbar-two {
     width: 100%;
     display: flex;
-    justify-content: space-around;
-    padding: 3% 0%;
+    justify-content: space-between;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 3rem;
+  }
+  .ecomm-logo {
+    display: flex;
+  }
+  .e-com {
+    width: 80%;
+  }
+  .ecomm {
+    width: 100%;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #22262a;
+    padding-top: 1rem;
+    word-wrap: nowrap;
   }
   .list {
-    width: 70%;
+    width: 80%;
     display: flex;
     justify-content: space-around;
     font-size: 3.5rem;
@@ -80,25 +109,26 @@
   .content {
     width: 100%;
   }
-  .image {
+  .Image {
     position: relative;
   }
   .flash_sale {
     position: absolute;
     top: 30%;
-    left: 5%;
+    left: 0;
     font-size: 7rem;
     color: #ffffff;
     font-weight: 700;
     line-height: 130%;
     letter-spacing: 0.5px;
+    padding-left: 3rem;
   }
   .hero-image {
     width: 100%;
     height: 100%;
   }
   .products {
-    width: 96%;
+    width: 95%;
     height: 100%;
     display: flex;
     transform: translateY(-26%);
@@ -108,16 +138,41 @@
   .shoe,
   .red {
     width: 100%;
-    height: 100%; 
-    border-radius: 1rem;
   }
-  .shoe {
-    position: relative;
-    border-radius: 0rem;
+  .bag-product {
+    width: 40rem;
+    height: 42rem;
+    background-color: #e9e9e9;
+    padding: 2rem;
   }
-  .red {
-    position: relative;
-    border-radius: 0rem;
+  .shoe-product {
+    width: 40rem;
+    height: 42rem;
+    background-color: #f6f6f6;
+    padding: 2rem;
+  }
+  .price-details-two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Details-two {
+   display: flex;
+   justify-content: space-between;
+  }
+  .redshoe-product {
+    width: 40rem;
+    height: 42rem;
+    background-color: #f6f6f6;
+    padding: 2rem;
+  }
+  .Details-three {
+    display: flex;
+    flex-direction: column;
+  }
+  .new-price-two {
+    display: flex;
+    justify-content: flex-end;
   }
   .name {
     font-size: 2.5rem;
@@ -125,27 +180,12 @@
     color: #223263;
     line-height: 130%;
     letter-spacing: 0.5px;
-  }
-  .name-one{
-    position: absolute;
-    top: 8%;
-    left: 36%;
-  }
-  .name-two {
-    position: absolute;
-    top: 8%;
-    right: 13%;
+    font-family: 'Poppins', sans-serif;
   }
   .price-details {
     display: flex;
     gap: 1rem;
     align-items: baseline;
-    justify-content: center;
-  }
-  .price-details-one {
-    position: absolute;
-    top: 83%;
-    left: 45%;
   }
   .old-price {
     font-size: 3.2rem;
@@ -159,31 +199,17 @@
     font-size: 2rem;
     font-weight: 900;
   }
+  .new-price {
+    display: flex;
+    justify-content: flex-end;
+  }
   .price {
     color: #40bfff;
     font-size: 3rem;
     font-weight: 900;
     font-family: 'Raleway', sans-serif;
   }
-  .price-one {
-    position: absolute;
-    top: 8%;
-    left: 56%;
-  }
-  .price-details-two{
-    position: absolute;
-    top: 30%;
-    left: 71%;
-  }
-  .price-two {
-    position: absolute;
-    top: 87%;
-    right: 5%;
-  }
-  .e-com {
-    height: 80%;
-    width: 80%;
-  }
+
   .title {
     width: 100%;
     height: 100%;
@@ -191,7 +217,7 @@
     justify-content: center;
     align-items: center;
     color: #22262a;
-    font-size: 4.5rem;
+    font-size: 5.5rem;
     font-weight: 600;
     letter-spacing: 0.5px;
     padding: 2% 0%;
@@ -203,10 +229,12 @@
     justify-content: center;
     align-items: center;
     gap: 5%;
-    font-size: 3.9rem;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     padding: 3% 0%;
+  }
+  .logo {
+    font-size: 3.5rem;
   }
   .logo:hover {
     color: #33a0ff;
@@ -219,10 +247,11 @@
   }
   .container {
     display:grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 24%);
     grid-template-rows:repeat(2, 1fr);
     justify-items: center;
     align-items: center;
+    padding-left: 3rem;
   }
   .child {
     display: flex;
@@ -232,12 +261,9 @@
     border-radius: 1rem;
     margin: 1rem;
   }
-  .child:hover{
-    box-shadow: rgba(109, 114, 113, 0.6) 4px 4px 4px 5px;
-  }
   .label_two {
-    width: 14%;
-    height: 10%;
+    width: 4rem;
+    height: 2.5rem;
     background-color: #ff0000;
     color: #ffffff;
     text-align: center;
@@ -251,14 +277,15 @@
     border-right: solid 0.5rem #f5f5f5;
     border-left: solid 0.5rem #f5f5f5;
     border-bottom: solid 0.5rem #f5f5f5;
-    border-bottom-left-radius: 2rem;
-    border-bottom-right-radius: 2rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
     
   }
   .details {
     display: flex;
     flex-direction: column;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
     background-color: #ffff;
     border-radius: 1rem;
   }
@@ -284,7 +311,7 @@
     width: 100%;
   }
   .star {
-    width: 1.5vw;
+    width: 1vw;
   }
   .load_more {
     width: 100%;
@@ -315,10 +342,10 @@
   .content-two {
     text-align: left;
     color: #ffffff;
-    padding: 8% 4%;
+    padding: 9rem 3rem;
   }
   .adidas {
-    font-size: 5.5rem;
+    font-size: 5rem;
     font-weight: 500;
     line-height: 8.5rem;
   }
@@ -326,13 +353,13 @@
     font-size: 2.2rem;
     font-weight: 400;
     text-align: left;
-    line-height: 190%;
+    line-height: 7rem;
   }
   .shop {
     font-size: 2rem;
     font-weight: 600;
     text-align: left;
-    line-height: 180%;
+    line-height: 6rem;
   }
   .shop:hover {
     text-decoration-line: underline;
@@ -358,7 +385,7 @@
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: baseline;
   }
   .content-three {
@@ -377,6 +404,15 @@
     width: 70%;
     text-align: center;
   }
+  .red_img {
+    padding-bottom: 5%; 
+  }
+  .black_img {
+    width: 8vw;
+  }
+  .rectangle {
+    width: 10vw;
+  }
   .news{
     font-size: 3.5rem;
     font-weight: 600;
@@ -387,9 +423,10 @@
     color: #22262a;
   }
   .words {
+    width: 100%;
     display: flex;
-    justify-content: space-around;
     padding-top: 10%;
+    padding-left: 3rem;
   }
   .entire {
     width: 100%;
@@ -414,7 +451,7 @@
   }
   .lorem-two {
     font-size: 1.8rem;
-    width: 70%;
+    width: 89%;
     text-align: left;
   }
   
@@ -445,8 +482,7 @@
   .product-details {
     display: flex;
     flex-direction: column;
-    width: 50%;
-    padding-left: 1rem;
+    width: 40%;
   }
   .swade {
     font-size: 2.2rem;
@@ -457,16 +493,6 @@
     letter-spacing: 0.5px;
     font-size: 2rem;
     font-weight: 500;
-  }
-  .red_img {
-    width: 6vw;
-    padding-bottom: 5%; 
-  }
-  .black_img {
-    width: 100%;
-  }
-  .rectangle {
-    width: 100%;
   }
   
   .write_area {
@@ -483,8 +509,8 @@
     width: 63rem;
     height: 5rem;
     font-size: 1.8rem;
+    padding-left: 2rem;
     opacity: 0.5;
-    padding-left: 3%;
   }
   .input:focus {
     outline: none;
@@ -496,7 +522,6 @@
     border: none;
     color:#ffffff;
     font-size: 1.8rem;
-    margin-left: 1%;
   }
   
   .page-five {
@@ -512,7 +537,7 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(1, 1fr);
     padding-top: 12%;
-    padding-left: 5%;
+    padding-left: 3rem;
   }
   .footer_content {
     display: flex;
@@ -546,9 +571,9 @@
     display:grid;
     grid-template-columns: repeat(4, 1fr) ;
     grid-template-rows: repeat(1, 1fr);
-    padding-top: 20%;
+    padding-top: 7%;
     padding-bottom: 8%;
-    padding-left: 8%;
+    padding-left: 3rem;
   }
   .horizontal {
     width: 100%;
@@ -568,10 +593,6 @@
   }
   .brand {
     width: 70%;
-  }
-  .timer {
-    display: none;
-    visibility: hidden;
   }
   .footer-navbar {
     display: none;
@@ -596,6 +617,11 @@
     display: flex;
     justify-content: space-between;
     padding: 1rem 2rem;
+  }
+  .top-time {
+    font-size: 1.5rem;
+    color: #223263;
+    font-weight: 600;
   }
   .input-two {
     border: #ebf0ff solid 2px;
@@ -624,25 +650,61 @@
     width: 2.5rem;
     height: 3rem;
   }
+  .notification-div {
+    position: relative;
+  }
   .bell {
     width: 2.5rem;
     height: 3rem;
+  }
+  .notification {
+    width: 1rem;
+    height: 1rem;
+    background-color: #ff0000;
+    border-radius: 0.5rem;
+    position: absolute;
+    top: 0%; 
+    right: 2%;
+  }
+  .image-mob {
     position: relative;
+  }
+  .flash_sale-mob {
+    position: absolute;
+    top: 35%;
+    left: 16%;
+    font-size: 2.2rem;
+    color: #ffffff;
+    font-weight: 700;
+    line-height: 130%;
+    padding-bottom: 1rem;
+  }
+  .timing {
+    position: absolute;
+    top: 60%;
+    left: 16%;
+    display: flex;
+    gap: 0.5rem;
+    padding-top: 0.5rem;
+  }
+  .colon {
+    font-size: 3rem;
+    height: 3rem;
+    color: #f5f5f5;
   }
   .footer-navbar {
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     visibility: visible;
     padding: 0rem 1rem;
     border-top: #ebf0ff solid 1px;
-    position: relative;
   }
   .ICONS {
     display: flex;
     flex-direction: column;
-    font-size: 4vw;
+    font-size: 5vw;
     color: #9098b1 ;
     padding: 1rem 0rem;
   }
@@ -672,11 +734,12 @@
     visibility: hidden;
   }  
   .container {
-    display:grid;
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows:repeat(2, 1fr);
     justify-items: center;
     align-items: center;
+    padding-left: 0rem;
   }
   .ellipse {
     width: 100%;
@@ -719,14 +782,18 @@
     padding-left: 2rem;
   }
   .details {
-    padding-left: 2.5rem;
     padding-bottom: 2rem;
-    height: 4rem;
+    padding-left: 2.3rem;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
   .name {
     font-size: 1rem;
     font-weight: 700;
-    text-align: left;
   }
   .price-three {
     font-size: 1rem;
@@ -752,7 +819,7 @@
     align-items: baseline;
   }
   .rating {
-    text-align: left;
+    width: 100%;
     padding-top: 1rem;
   }
   .star {
@@ -765,9 +832,31 @@
   .product-item {
     width: 90%;
   }
-  .hero-image-two,
-  .banner-img-mob {
+  .banner-img-mob,
+  .hero-image-two {
     width: 100%;
+  }
+  .banner-img-mob {
+    padding: 2rem;
+  }
+  .banner-mob-div {
+    position: relative;
+  }
+  .recommend {
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    font-size: 2rem;
+    color: #ffffff;
+    font-weight: 700;
+    line-height: 130%; 
+  }
+  .our_recomendation {
+    position: absolute;
+    top: 55%;
+    left: 15%;
+    color: #ffffff;
+    font-size: 1.3rem;
   }
   .image-mob {
     padding: 2rem 2rem 0rem 2rem;
@@ -778,16 +867,6 @@
     border-bottom: 0px;
     border-bottom-left-radius: 0rem;
     border-bottom-right-radius: 0rem;
-  }
-  .child {
-    width: 80%;
-    height: 23rem;
-    border: #ebf0ff solid 1px;
-    border-radius: 6px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
   .images {
     width: 100%;
@@ -804,17 +883,520 @@
   .materials {
     width: 80%;
   }
-  .number-mob {
-    width: 1rem;
-    height: 1rem;
-    position: absolute;
-    bottom: 68%;
-    right: 48%; 
+  .CART {
+    position: relative;
   }
-  .notification {
+  .number {
     width: 1rem;
     height: 1rem;
-    position: absolute; 
-    right: 2rem;
+    background-color: #ff0000;
+    color: #ffffff;
+    font-size: 0.8rem;
+    border-radius: 0.5rem;
+    position: absolute;
+    top: 1.5%;
+    right: 0%;
+  }
+  .child {
+    border: 1px solid #ebf0ff;
+    border-radius: 6px;
+  }
+}
+
+@media screen and (min-width:851px) and (max-width:1100px) {
+  .lang,
+  .currency {
+    font-size: 1.5rem;
+  }
+  .nav_items {
+    font-size: 2.5rem;
+  }
+  .label {
+    font-size: 1.5rem;
+  }
+  .list {
+    font-size: 2.5rem ;
+  }
+  .flash_sale {
+    font-size: 5rem;
+  }
+  .products {
+    width: 100%;
+  }
+  .bag-product {
+    width: 30rem;
+    height: 32rem;
+  }
+  .shoe-product {
+    width: 30rem;
+    height: 32rem; 
+  }
+  .name {
+    font-size: 2rem;
+  }
+  .redshoe-product {
+    width: 30rem;
+    height: 32rem;
+  }
+  .old-price {
+    font-size: 2.5rem;
+  }
+  .discount {
+    font-size: 1.8rem;
+  }
+  .price {
+    font-size: 2.5rem;
+  }
+  .title {
+    font-size: 4rem;
+  }
+  .logo {
+    font-size: 2.5rem;
+  }
+  .label_two {
+    font-size: 1rem;
+  }
+  .name-three {
+    font-size: 1.8rem;
+  }
+  .price-three {
+    font-size: 1.4rem;
+  }
+  .old-price-two {
+    font-size: 1.8rem;
+  }
+  .discount-two {
+    font-size: 1.3rem;
+  }
+  .load_more {
+    font-size: 2.5rem;
+  }
+  .content-two {
+    padding: 5rem 2rem;
+  }
+  .adidas {
+    font-size: 3rem;
+    line-height: 6.5rem;
+  }
+  .perform {
+    font-size: 1.3rem;
+    line-height: 5rem ;
+  }
+  .shop {
+    font-size: 1.5rem;
+    line-height: 4rem;
+  }
+  .service {
+    font-size: 2.3rem;
+  }
+  .lorem {
+    font-size: 1.3rem;
+  }
+  .news{
+    font-size: 3rem; 
+  }
+  .date {
+    font-size: 1.5rem ;
+  }
+  .main {
+    font-size: 1.8rem;
+  }
+  .lorem-two {
+    font-size: 1.3rem;
+  }
+  .feature {
+    font-size: 3rem;
+  }
+  .swade {
+    font-size: 1.8rem;
+  }
+  .new_price {
+    font-size: 1.8rem;
+  }
+  .input {
+    font-size: 1.3rem;
+    width: 43rem;
+    height: 5rem;
+  }
+  button {
+    width: 10rem;
+    height: 5rem;
+    font-size: 1.3rem;
+  }
+  .follow_us {
+    font-size: 1.5rem;
+  }
+  .content-five {
+    font-size: 1rem;
+  }
+  .red_imgone {
+    width: 11vw;
+  }
+  .red_imgtwo {
+    width: 8vw;
+  }
+  .red_imgthree {
+    width: 7vw;
+  }
+  .e-com {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width:651px) and (max-width:850px) {
+  .lang,
+  .currency {
+    font-size: 1.2rem;
+  }
+  .nav_items {
+    font-size: 2rem;
+  }
+  .label {
+    font-size: 1.2rem;
+  }
+  .list {
+    font-size: 2rem ;
+  }
+  .flash_sale {
+    font-size: 3rem;
+  }
+  .products {
+    width: 100%;
+  }
+  .bag-product {
+    width: 25rem;
+    height: 27rem;
+  }
+  .shoe-product {
+    width: 25rem;
+    height: 27rem; 
+  }
+  .name {
+    font-size: 1.5rem;
+  }
+  .redshoe-product {
+    width: 25rem;
+    height: 27rem;
+  }
+  .old-price {
+    font-size: 2rem;
+  }
+  .discount {
+    font-size: 1.2rem;
+  }
+  .price {
+    font-size: 2rem;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .logo {
+    font-size: 2rem;
+  }
+  .label_two {
+    font-size: 1rem;
+    width: 3.5rem;
+    height: 2rem;
+  }
+  .name-three {
+    font-size: 1.2rem;
+  }
+  .price-three {
+    font-size: 1.1rem;
+  }
+  .old-price-two {
+    font-size: 1.2rem;
+  }
+  .discount-two {
+    font-size: 1rem;
+  }
+  .load_more {
+    font-size: 2rem;
+  }
+  .content-two {
+    padding: 3rem 1rem;
+  }
+  .adidas {
+    font-size: 2.5rem;
+    line-height: 4.5rem;
+  }
+  .perform {
+    font-size: 1.1rem;
+    line-height: 3.5rem;
+  }
+  .shop {
+    font-size: 1.2rem;
+    line-height: 3rem;
+  }
+  .service {
+    font-size: 1.8rem;
+  }
+  .lorem {
+    font-size: 1.1rem;
+  }
+  .news{
+    font-size: 2rem; 
+  }
+  .date {
+    font-size: 1rem ;
+  }
+  .main {
+    font-size: 1.4rem;
+  }
+  .lorem-two {
+    font-size: 1.1rem;
+  }
+  .feature {
+    font-size: 2rem;
+  }
+  .swade {
+    font-size: 1.3rem;
+  }
+  .new_price {
+    font-size: 1.3rem;
+  }
+  .input {
+    font-size: 1.1rem;
+    width: 33rem;
+    height: 4rem;
+  }
+  button {
+    width: 8rem;
+    height: 4rem;
+    font-size: 1.1rem;
+  }
+  .follow_us {
+    font-size: 1rem;
+  }
+  .content-five {
+    font-size: 1rem;
+  }
+  .red_imgone {
+    width: 10vw;
+  }
+  .red_imgtwo {
+    width: 7vw;
+  }
+  .red_imgthree {
+    width: 6vw;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 21rem);
+    grid-template-rows:repeat(2, 1fr);
+    padding: 0% 12%;
+  }
+  .ecomm { 
+    font-size: 1.5rem;
+  }
+  .e-com {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width:451px) and (max-width:650px) {
+  .lang,
+  .currency {
+    font-size: 1rem;
+  }
+  .nav_items {
+    font-size: 1.5rem;
+  }
+  .label {
+    font-size: 1rem;
+  }
+  .list {
+    font-size: 1.5rem ;
+  }
+  .flash_sale {
+    font-size: 3rem;
+  }
+  .products {
+    width: 100%;
+  }
+  .bag-product {
+    width: 20rem;
+    height: 22rem;
+  }
+  .shoe-product {
+    width: 20rem;
+    height: 22rem; 
+  }
+  .name {
+    font-size: 1.5rem;
+  }
+  .redshoe-product {
+    width: 20rem;
+    height: 22rem;
+  }
+  .old-price {
+    font-size: 1.5rem;
+  }
+  .discount {
+    font-size: 1rem;
+  }
+  .price {
+    font-size: 1.5rem;
+  }
+  .title {
+    font-size: 3rem;
+  }
+  .logo {
+    font-size: 1.5rem;
+  }
+  .label_two {
+    font-size: 1rem;
+    width: 3rem;
+    height: 2rem;
+  }
+  .name-three {
+    font-size: 1rem;
+  }
+  .price-three {
+    font-size: 1rem;
+  }
+  .old-price-two {
+    font-size: 1rem;
+  }
+  .discount-two {
+    font-size: 1rem;
+  }
+  .load_more {
+    font-size: 1.5rem;
+  }
+  .content-two {
+    padding: 3rem 1rem;
+  }
+  .adidas {
+    font-size: 2.3rem;
+    line-height: 3rem;
+  }
+  .perform {
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+  .shop {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .service {
+    font-size: 1.5rem;
+  }
+  .lorem {
+    font-size: 1rem;
+  }
+  .news{
+    font-size: 1.5rem; 
+  }
+  .date {
+    font-size: 1rem ;
+  }
+  .main {
+    font-size: 1rem;
+  }
+  .lorem-two {
+    font-size: 1rem;
+  }
+  .feature {
+    font-size: 1.5rem;
+  }
+  .swade {
+    font-size: 1rem;
+  }
+  .new_price {
+    font-size: 1rem;
+  }
+  .input {
+    font-size: 1rem;
+    width: 23rem;
+    height: 3rem;
+  }
+  button {
+    width: 6rem;
+    height: 3rem;
+    font-size: 1rem;
+  }
+  .follow_us {
+    font-size: 1rem;
+  }
+  .content-five {
+    font-size: 1rem;
+  }
+  .red_imgone {
+    width: 8vw;
+  }
+  .red_imgtwo {
+    width: 5vw;
+  }
+  .red_imgthree {
+    width: 5vw;
+  }
+  .BLUE {
+    width: 100%; 
+  }
+  .blue-shoe {
+    width: 100%;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 20rem);
+    grid-template-rows:repeat(2, 1fr);
+    padding: 0% 18%;
+  }
+  .ecomm { 
+    font-size: 1rem;
+  }
+  .e-com {
+    width: 30%;
+  }
+}
+
+@media screen and (min-width:1500px) {
+  .page-one {
+    width: 1500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .page-two {
+    width: 1500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .page-three {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .page-four {
+    width: 1500px;
+    margin: auto;
+  }
+  .page-five {
+    width: 1500px;
+    margin: auto;
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .star {
+    width: 2rem;
+  }
+  .rectangle {
+    width: 100%;
+  }
+  .BLUE {
+    width: 100%;
+    transform: translateY(-20%);
+  }
+  .e-com {
+    width: 50%;
   }
 }
