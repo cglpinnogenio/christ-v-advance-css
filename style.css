@@ -53,6 +53,7 @@
     opacity: 0.4;
   }
   .cart {
+    width: 100%;
     padding-top: 2rem;
   }
   .cart-div {
@@ -77,10 +78,11 @@
     justify-content: space-between;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    padding-left: 3rem;
+    padding-left: 3.3rem;
   }
   .ecomm-logo {
     display: flex;
+    gap: 1rem;
   }
   .e-com {
     width: 80%;
@@ -128,28 +130,40 @@
     height: 100%;
   }
   .products {
-    width: 95%;
+    width: 100%;
     height: 100%;
     display: flex;
+    justify-content: center;
+    align-items: center;
     transform: translateY(-26%);
-    padding-left: 3rem;
+    
   }
   .bag,
   .shoe,
   .red {
-    width: 100%;
+    width: 90%;
   }
   .bag-product {
-    width: 40rem;
-    height: 42rem;
+    width: 38rem;
+    height: 40rem;
     background-color: #e9e9e9;
     padding: 2rem;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
   }
   .shoe-product {
-    width: 40rem;
-    height: 42rem;
+    width: 38rem;
+    height: 40rem;
     background-color: #f6f6f6;
     padding: 2rem;
+  }
+  .redshoe-product {
+    width: 38rem;
+    height: 40rem;
+    background-color: #f6f6f6;
+    padding: 2rem;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
   }
   .price-details-two {
     display: flex;
@@ -159,12 +173,6 @@
   .Details-two {
    display: flex;
    justify-content: space-between;
-  }
-  .redshoe-product {
-    width: 40rem;
-    height: 42rem;
-    background-color: #f6f6f6;
-    padding: 2rem;
   }
   .Details-three {
     display: flex;
@@ -585,7 +593,6 @@
     align-items: center;
   }
   .cards {
-    width: 30%;
     position: absolute;
     bottom: 0.3%;
     right: 0;
@@ -922,21 +929,25 @@
   }
   .products {
     width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .bag-product {
-    width: 30rem;
-    height: 32rem;
+    width: 28rem;
+    height: 30rem;
   }
   .shoe-product {
-    width: 30rem;
-    height: 32rem; 
+    width: 28rem;
+    height: 30rem; 
   }
   .name {
     font-size: 2rem;
   }
   .redshoe-product {
-    width: 30rem;
-    height: 32rem;
+    width: 28rem;
+    height: 30rem;
   }
   .old-price {
     font-size: 2.5rem;
@@ -1058,25 +1069,34 @@
     font-size: 2rem ;
   }
   .flash_sale {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
   .products {
     width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .bag,
+  .shoe,
+  .red {
+    width: 90%;
   }
   .bag-product {
-    width: 25rem;
-    height: 27rem;
+    width: 23rem;
+    height: 25rem;
   }
   .shoe-product {
-    width: 25rem;
-    height: 27rem; 
+    width: 23rem;
+    height: 25rem; 
   }
   .name {
     font-size: 1.5rem;
   }
   .redshoe-product {
-    width: 25rem;
-    height: 27rem;
+    width: 23rem;
+    height: 25rem;
   }
   .old-price {
     font-size: 2rem;
@@ -1184,13 +1204,23 @@
     display: grid;
     grid-template-columns: repeat(3, 21rem);
     grid-template-rows:repeat(2, 1fr);
-    padding: 0% 12%;
+    padding: 0% 6%;
   }
   .ecomm { 
     font-size: 1.5rem;
   }
   .e-com {
     width: 50%;
+  }
+  .label {
+    padding-top: 1rem;
+  }
+  .cart {
+    padding-top: 1rem;
+  }
+  .number {
+    top: 0rem;
+    left: 1.2rem;
   }
 }
 
@@ -1201,6 +1231,8 @@
   }
   .nav_items {
     font-size: 1.5rem;
+    display: flex;
+    justify-content: baseline;
   }
   .label {
     font-size: 1rem;
@@ -1211,23 +1243,32 @@
   .flash_sale {
     font-size: 3rem;
   }
+  .bag,
+  .shoe,
+  .red {
+    width: 90%;
+  }
   .products {
     width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .bag-product {
-    width: 20rem;
-    height: 22rem;
+    width: 17rem;
+    height: 20rem;
   }
   .shoe-product {
-    width: 20rem;
-    height: 22rem; 
+    width: 17rem;
+    height: 20rem; 
   }
   .name {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   .redshoe-product {
-    width: 20rem;
-    height: 22rem;
+    width: 17rem;
+    height: 20rem;
   }
   .old-price {
     font-size: 1.5rem;
@@ -1341,13 +1382,28 @@
     display: grid;
     grid-template-columns: repeat(2, 20rem);
     grid-template-rows:repeat(2, 1fr);
-    padding: 0% 18%;
+    padding: 0% 10%;
   }
   .ecomm { 
     font-size: 1rem;
   }
   .e-com {
     width: 30%;
+  }
+  .number {
+    width: 1.5rem;
+    height: 1.5rem;
+    top: 0.3rem;
+    left: 1.4rem;
+  }
+  .label {
+    padding-top: 0.8rem;
+  }
+  .cart {
+    padding-top: 0.8rem;
+  }
+  .half-two {
+    padding-bottom: 5rem;
   }
 }
 
@@ -1398,5 +1454,20 @@
   }
   .e-com {
     width: 50%;
+  }
+}
+
+@media screen and (min-width:451px) and (max-width:530px) {
+  .bag-product {
+    width: 13rem;
+    height: 20rem;
+  }
+  .shoe-product {
+    width: 13rem;
+    height: 20rem;
+  }
+  .redshoe-product {
+    width: 13rem;
+    height: 20rem;
   }
 }
