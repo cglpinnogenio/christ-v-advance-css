@@ -23,7 +23,8 @@
     align-items: baseline;
     border-bottom: #fafafb solid 2px;
     padding-bottom: 1rem;
-    padding-left: 0.5rem;
+    padding-left: 6%;
+    padding-right: 3.7%;
   }
   .selecter {
     width: 100%;
@@ -48,7 +49,7 @@
   }
   .label {
     font-size: 2rem;
-    padding-top: 2rem;
+    padding-top: 1.3rem;
   }
   .dollar {
     opacity: 0.4;
@@ -79,11 +80,12 @@
     justify-content: space-between;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    padding-left: 0.8rem;
+    padding-right: 6%;
   }
   .ecomm-logo {
     display: flex;
     gap: 1rem;
+    padding-left: 7%;
   }
   .e-com {
     width: 80%;
@@ -97,7 +99,7 @@
     word-wrap: nowrap;
   }
   .list {
-    width: 80%;
+    width: 50%;
     display: flex;
     justify-content: space-around;
     font-size: 3.5rem;
@@ -118,13 +120,12 @@
   .flash_sale {
     position: absolute;
     top: 30%;
-    left: 0;
+    left: 6%;
     font-size: 7rem;
     color: #ffffff;
     font-weight: 700;
     line-height: 130%;
     letter-spacing: 0.5px;
-    padding-left: 0.5rem;
   }
   .hero-image {
     width: 100%;
@@ -147,7 +148,7 @@
     width: 38rem;
     height: 40rem;
     background-color: #e9e9e9;
-    padding: 2rem;
+    padding: 2%;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
   }
@@ -155,13 +156,13 @@
     width: 38rem;
     height: 40rem;
     background-color: #f6f6f6;
-    padding: 2rem;
+    padding: 2%;
   }
   .redshoe-product {
     width: 38rem;
     height: 40rem;
     background-color: #f6f6f6;
-    padding: 2rem;
+    padding: 2%;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
   }
@@ -262,7 +263,7 @@
   }
   .container {
     display:grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 25rem);
     grid-template-rows:repeat(2, 1fr);
     justify-items: center;
     align-items: center; 
@@ -348,6 +349,7 @@
     height: 100%;
   }
   .blue_page {
+    width: 100%;
     background-color: #40bfff;
     display: flex;
     justify-content: space-between;
@@ -355,7 +357,7 @@
   .content-two {
     text-align: left;
     color: #ffffff;
-    padding: 9rem 0.5rem;
+    padding: 15% 6%;
   }
   .adidas {
     font-size: 5rem;
@@ -558,12 +560,13 @@
     position:relative;
   }
   .half-one {
-    width: 80%;
+    width: 100%;
     height: 40rem;
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 5rem;
+    padding-left: 6.5rem;
   }
   .footer_content {
     width: 100%;
@@ -595,14 +598,15 @@
   }
 
   .half-two {
-    width: 80%;
+    width: 90%;
     height: 40rem ;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-left: 0.8%;
   }
   .content-six {
-    width: 50%;
+    width: 65%;
     height: 28rem;
     font-size: 1.5rem;
   }
@@ -672,6 +676,7 @@
   }
   .search-bar {
     display: flex;
+    border-bottom: 1px solid #ebf0ff;
   }
   .bar-div {
     width: 80%;
@@ -685,7 +690,7 @@
     position: relative;
     display: flex;
     gap: 2rem;
-    padding-right: 0.5rem;
+    padding-right: 2rem;
   }
   .bell {
     width: 3rem;
@@ -698,28 +703,28 @@
     border-radius: 0.5rem;
     position: absolute;
     top: 0%; 
-    right: 8%;
+    right: 22%;
   }
   .image-mob {
     position: relative;
   }
   .flash_sale-mob {
     position: absolute;
-    top: 35%;
-    left: 16%;
+    top: 30%;
+    left: 12%;
     font-size: 2.2rem;
     color: #ffffff;
     font-weight: 700;
     line-height: 130%;
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
   }
   .timing {
     position: absolute;
     top: 60%;
-    left: 16%;
+    left: 12%;
     display: flex;
     gap: 0.5rem;
-    padding-top: 0.5rem;
+    padding-top: 2rem;
   }
   .colon {
     font-size: 3rem;
@@ -730,9 +735,9 @@
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     visibility: visible;
-    padding: 0rem 1rem;
+    padding: 0rem 1.8rem;
     border-top: #ebf0ff solid 1px;
   }
   .navbar-label {
@@ -794,7 +799,7 @@
   .labels-mob {
     display: flex;
     justify-content: space-between;
-    padding: 2rem 1rem;
+    padding: 2rem 2.5rem;
   }
   .category {
     font-size: 1.4rem;
@@ -808,20 +813,31 @@
   }
   .product-icons {
     width: 100%;
+    height: 100%;
     display: flex;
-    gap: 0.7rem;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 2rem;
   }
   .mob-product {
     width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
     padding-top: 2rem;
   }
   .icon-label {
     font-weight: 400;
     font-size: 1rem;
     color: #9098B1;
-    padding-left: 2rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .man-work {
+    line-height: 1rem;
   }
   .details {
     padding-bottom: 2rem;
@@ -863,6 +879,8 @@
   .rating {
     width: 100%;
     padding-top: 1rem;
+    display: flex;
+    gap: 0.5rem;
   }
   .star {
     width: 1rem;
@@ -870,9 +888,6 @@
   .label_two {
     display: none;
     visibility: hidden;
-  }
-  .product-item {
-    width: 90%;
   }
   .banner-img-mob,
   .hero-image-two {
@@ -936,16 +951,48 @@
     font-size: 0.8rem;
     border-radius: 0.5rem;
     position: absolute;
-    top: 4%;
-    left: 80%;
+    top: 8%;
+    left: 70%;
   }
   .child {
     border: 1px solid #ebf0ff;
     border-radius: 6px;
+    margin: 0.5rem 2rem;
+  }
+  .product-item {
+    width: 80%;
+  }
+  .rating {
+    display: flex;
+    gap: 0.3rem;
+  }
+}
+@media screen and (min-width:200px) and (max-width:350px) {
+  .icon-3 {
+    width: 60%;
+  }
+  .product-item {
+    width: 70%;
+  }
+}
+@media screen and (min-width:351px) and (max-width:400px) {
+  .icon-3 {
+    width: 80%;
+  }
+  .product-item {
+    width: 90%;
   }
 }
 
 @media screen and (min-width:851px) and (max-width:1100px) {
+  .navbar-one {
+    padding-right: 5%;
+    padding-left: 9%;
+  }
+  .navbar-two {
+    padding-right: 7%;
+    
+  }
   .lang,
   .currency {
     font-size: 1.5rem;
@@ -961,6 +1008,7 @@
   }
   .flash_sale {
     font-size: 5rem;
+    padding-left: 1.5%;
   }
   .products {
     width: 100%;
@@ -971,18 +1019,18 @@
   }
   .bag-product {
     width: 28rem;
-    height: 30rem;
+    height: 32rem;
   }
   .shoe-product {
     width: 28rem;
-    height: 30rem; 
+    height: 32rem; 
   }
   .name {
     font-size: 2rem;
   }
   .redshoe-product {
     width: 28rem;
-    height: 30rem;
+    height: 32rem;
   }
   .old-price {
     font-size: 2.5rem;
@@ -1000,7 +1048,7 @@
     font-size: 2.5rem;
   }
   .label_two {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
   .name-three {
     font-size: 1.8rem;
@@ -1013,14 +1061,20 @@
   }
   .discount-two {
     font-size: 1.3rem;
+    padding-top: 0.5rem;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 28.5rem);
+    grid-template-rows:repeat(2, 1fr);
   }
   .load_more {
     font-size: 2.5rem;
     width: 100%;
-    height: 14rem;
+    height: 15rem;
   }
   .content-two {
-    padding: 5rem 2rem;
+    padding: 5% 9%;
   }
   .adidas {
     font-size: 3rem;
@@ -1111,9 +1165,32 @@
   .logo-two {
     width: 40%;
   }
+  .star {
+    width: 1.3rem;
+  }
+  .rating {
+    display: flex;
+    gap: 0.5rem;
+  }
+  .half-one {
+    padding-left: 8.5%;
+  }
+  .half-two {
+    padding-left: 3.5%;
+  }
+  .ecomm-logo {
+    padding-left: 10%;
+  }
 }
 
 @media screen and (min-width:651px) and (max-width:850px) {
+  .navbar-one {
+    padding-right: 5%;
+    padding-left: 6%;
+  }
+  .navbar-two {
+    padding-right: 7%;
+  }
   .lang,
   .currency {
     font-size: 1.2rem;
@@ -1173,7 +1250,7 @@
     font-size: 2rem;
   }
   .label_two {
-    font-size: 1rem;
+    font-size: 1.3rem;
     width: 3.5rem;
     height: 2rem;
   }
@@ -1188,6 +1265,7 @@
   }
   .discount-two {
     font-size: 1rem;
+    padding-top: 0.2rem;
   }
   .load_more {
     font-size: 2rem;
@@ -1195,7 +1273,7 @@
     height: 15rem;
   }
   .content-two {
-    padding: 3rem 1rem;
+    padding: 3% 8%;
   }
   .adidas {
     font-size: 2.8rem;
@@ -1266,7 +1344,7 @@
   }
   .container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 21rem);
     grid-template-rows:repeat(2, 1fr);
   }
   .content-three {
@@ -1274,6 +1352,9 @@
   }
   .red_img {
     padding-bottom: 1.5rem; 
+  }
+  .ecomm-logo {
+    padding-left: 6.5%;
   }
   .ecomm { 
     font-size: 1.5rem;
@@ -1300,9 +1381,29 @@
   .logo-two {
     width: 40%;
   }
+  .star {
+    width: 1rem;
+  }
+  .rating {
+    display: flex;
+    gap: 0.5rem;
+  }
+  .half-one {
+    padding-left: 8%;
+  }
+  .half-two {
+    padding-left: 3%;
+  }
 }
 
 @media screen and (min-width:451px) and (max-width:650px) {
+  .navbar-one {
+    padding-right: 4%;
+    padding-left: 6.5%;
+  }
+  .navbar-two {
+    padding-right: 6%;
+  }
   .lang,
   .currency {
     font-size: 1rem;
@@ -1320,6 +1421,7 @@
   }
   .flash_sale {
     font-size: 3rem;
+    padding-left: 2%;
   }
   .bag,
   .shoe,
@@ -1334,18 +1436,18 @@
     align-items: center;
   }
   .bag-product {
-    width: 17rem;
+    width: 18rem;
     height: 20rem;
   }
   .shoe-product {
-    width: 17rem;
+    width: 18rem;
     height: 20rem; 
   }
   .name {
     font-size: 1.3rem;
   }
   .redshoe-product {
-    width: 17rem;
+    width: 18rem;
     height: 20rem;
   }
   .old-price {
@@ -1379,6 +1481,7 @@
   }
   .discount-two {
     font-size: 1rem;
+    padding-top: 0.1rem;
   }
   .load_more {
     font-size: 1.5rem;
@@ -1386,7 +1489,7 @@
     height: 8rem;
   }
   .content-two {
-    padding: 3rem 1rem;
+    padding: 3% 8%;
   }
   .adidas {
     font-size: 2.3rem;
@@ -1499,6 +1602,7 @@
   }
   .half-two {
     padding-bottom: 5rem;
+    padding-left: 1rem;
   }
   .rectangle {
     width: 90%;
@@ -1506,9 +1610,34 @@
   .logo-two {
     width: 40%;
   }
+  .star {
+    width: 1rem;
+  }
+  .rating {
+    display: flex;
+    gap: 0.5rem;
+  }
+  .ecomm-logo {
+    padding-left: 6.5%;
+  }
+  .half-one {
+    padding-left: 8%;
+  }
+  .half-two {
+    padding-left: 3%;
+  }
 }
 
 @media screen and (min-width:1500px) {
+  .navbar-one {
+    padding-right: 4%;
+  }
+  .navbar-two {
+    padding-right: 6%;
+  }
+  .ecomm-logo {
+    padding-left: 5.5%;
+  }
   .page-one {
     width: 1500px;
     display: flex;
@@ -1524,10 +1653,8 @@
     align-items: center;
   }
   .page-three {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    width: 1500px;
+   margin: auto;
   }
   .page-four {
     width: 1500px;
@@ -1543,6 +1670,11 @@
     justify-content: center;
     align-items: center;
   }
+  .container {
+    display: grid;
+    grid-template-columns: repeat(4, 35rem);
+    grid-template-rows:repeat(2, 1fr);
+  }
   .star {
     width: 2rem;
   }
@@ -1556,19 +1688,35 @@
   .e-com {
     width: 50%;
   }
+  .rating {
+    display: flex;
+    gap: 0.5rem;
+  }
+  .bag-product {
+    width: 42rem;
+    height: 40rem;
+  }
+  .shoe-product {
+    width: 42rem;
+    height: 40rem;
+  }
+  .redshoe-product {
+    width: 42rem;
+    height: 40rem;
+  }
 }
 
-@media screen and (min-width:451px) and (max-width:530px) {
+@media screen and (min-width:451px) and (max-width:550px) {
   .bag-product {
-    width: 15rem;
+    width: 16rem;
     height: 20rem;
   }
   .shoe-product {
-    width: 15rem;
+    width: 16rem;
     height: 20rem;
   }
   .redshoe-product {
-    width: 15rem;
+    width: 16rem;
     height: 20rem;
   }
 }
