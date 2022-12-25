@@ -1184,11 +1184,11 @@
 
 @media screen and (min-width:651px) and (max-width:850px) {
   .navbar-one {
-    padding-right: 5%;
+    padding-right: 1%;
     padding-left: 4%;
   }
   .navbar-two {
-    padding-right: 7%;
+    padding-right: 3%;
   }
   .lang,
   .currency {
@@ -1632,11 +1632,11 @@
 
 @media screen and (min-width:1500px) {
   .navbar-one {
-    padding-right: 3%;
+    padding-right: 1%;
     padding-left: 8%;
   }
   .navbar-two {
-    padding-right: 6%;
+    padding-right: 4%;
   }
   .ecomm-logo {
     padding-left: 8.5%;
@@ -1701,15 +1701,15 @@
     gap: 0.5rem;
   }
   .bag-product {
-    width: 42rem;
+    width: 41rem;
     height: 40rem;
   }
   .shoe-product {
-    width: 42rem;
+    width: 41rem;
     height: 40rem;
   }
   .redshoe-product {
-    width: 42rem;
+    width: 41rem;
     height: 40rem;
   }
   .half-one {
