@@ -82,12 +82,14 @@
     padding-right: 3%;
   }
   .ecomm-logo {
+    width: 100%;
     display: flex;
+    justify-content: flex-end;
     gap: 1rem;
     padding-left: 7%;
   }
   .e-com {
-    width: 30%;
+    width: 10%;
   }
   .ecomm {
     width: 100%;
@@ -110,24 +112,29 @@
     cursor: pointer;
   }
   .content {
-    width: 100%;
+    width: 100%; 
+    height: 50rem;
   }
   .Image {
-    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image:url("./images/Promotion Image.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+    display: flex;
+    align-items: center;
   }
   .flash_sale {
-    position: absolute;
-    top: 30%;
-    left: 6%;
-    font-size: 6rem;
+    width: 90%;
+    font-size: 7rem;
     color: #ffffff;
     font-weight: 900;
     line-height: 130%;
     letter-spacing: 0.5px;
-  }
-  .hero-image {
-    width: 100%;
-    height: 100%;
+    display: flex;
+    justify-content: flex-start;
   }
   .products {
     width: 100%;
@@ -141,43 +148,69 @@
   .shoe,
   .red {
     width: 90%;
+    padding-left: 3%;
   }
   .bag-product {
     width: 38rem;
     height: 40rem;
-    background-color: #e9e9e9;
-    padding: 2%;
+    background-color: #f6f6f6;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .bag-product:hover {
+    background-color: #e9e9e9;
   }
   .shoe-product {
     width: 38rem;
     height: 40rem;
     background-color: #f6f6f6;
-    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .shoe-product:hover {
+    background-color: #e9e9e9;
   }
   .redshoe-product {
     width: 38rem;
     height: 40rem;
     background-color: #f6f6f6;
-    padding: 2%;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .redshoe-product:hover {
+    background-color: #e9e9e9;
   }
   .price-details-two {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
+  .Details {
+    width: 80%;
+  }
   .Details-two {
+    height: 8.5rem;
    display: flex;
    justify-content: space-between;
   }
   .Details-three {
+    width: 80%;
     display: flex;
     flex-direction: column;
   }
   .new-price-two {
+    width: 80%;
     display: flex;
     justify-content: flex-end;
   }
@@ -188,7 +221,14 @@
     line-height: 130%;
     letter-spacing: 0.5px;
   }
+  .price-details-one {
+    width: 80%;
+    display: flex;
+    gap: 1rem;
+    align-items: baseline;
+  }
   .price-details {
+    width: 100%;
     display: flex;
     gap: 1rem;
     align-items: baseline;
@@ -206,6 +246,7 @@
     font-weight: 900;
   }
   .new-price {
+    width: 80%;
     display: flex;
     justify-content: flex-end;
   }
@@ -276,7 +317,7 @@
     border-radius: 1rem;
     margin: 1rem;
   }
-  .label_two {
+  .hot_promo {
     width: 4rem;
     height: 2.5rem;
     background-color: #ff0000;
@@ -286,6 +327,11 @@
     font-size: 1.5rem;
     border-radius: 3px;
   }
+  .image:hover {
+    opacity: 0.3;
+    background-image: url("./images/item hover.png");
+  }
+
   .whole {
     width: 100%;
     height: 10rem;
@@ -327,6 +373,9 @@
   .material {
     width: 100%;
   }
+  .materials:hover{
+  
+  }
   .rating {
     display: flex;
     gap: 0.5rem;
@@ -347,7 +396,6 @@
     font-weight: 600;
     padding: 4% 0%;
     color: #33a0ff;
-    text-decoration-line: none;
   }
   .load_more:hover {
     text-decoration-line: underline;
@@ -372,7 +420,7 @@
     gap: 1rem;
     text-align: left;
     color: #ffffff;
-    padding: 12% 6%;
+    padding: 10% 5%;
   }
   .adidas {
     font-size: 5rem;
@@ -444,7 +492,7 @@
     width: 10vw;
   }
   .rectangle {
-    width: 90%;
+    width: 50%;
   }
   .news{
     font-size: 3.5rem;
@@ -519,6 +567,7 @@
     display: flex;
     flex-direction: column;
     width: 40%;
+    padding-left: 1.5rem;
   }
   .swade {
     font-size: 2.2rem;
@@ -638,17 +687,22 @@
     height: 0.2rem;
     background-color: #ffffff;
     margin: 2rem;
-    position: absolute;
-    bottom: 6%;
   }
   .cards {
-    position: absolute;
-    bottom: 0.3%;
-    right: 0;
+    width: 95%;
     padding-bottom: 1.5rem;
+    display: flex;
+    justify-content: flex-end;
   }
   .brand {
-    width: 70%;
+    width: 20%;
+  }
+  .line-div {
+    width: 100%;
+    height: 10rem;
+    background-color:#bcddfe ;
+    display: flex;
+    flex-direction: column;
   }
   .footer-navbar {
     display: none;
@@ -764,8 +818,11 @@
   }
   .colon {
     font-size: 3rem;
-    height: 2rem;
+    height: 3rem;
     color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .footer-navbar {
     width: 100%;
@@ -817,6 +874,10 @@
     display: none;
     visibility: hidden;
   }  
+  .line-div {
+    display: none;
+    visibility: hidden;
+  }
   .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -924,7 +985,7 @@
   .star {
     width: 1rem;
   }
-  .label_two {
+  .hot_promo {
     display: none;
     visibility: hidden;
   }
@@ -983,20 +1044,21 @@
     position: relative;
   }
   .number {
-    width: 1rem;
-    height: 1rem;
+    width: 1.3rem;
+    height: 1.3rem;
     background-color: #ff0000;
     color: #ffffff;
     font-size: 0.8rem;
-    border-radius: 0.5rem;
+    border-radius: 0.7rem;
     position: absolute;
-    top: 8%;
+    top: 6%;
     left: 70%;
   }
   .child {
+    height: 22rem;
     border: 1px solid #ebf0ff;
     border-radius: 6px;
-    margin: 0.5rem 2rem;
+    margin: 0.5rem 1rem;
   }
   .product-item {
     width: 80%;
@@ -1004,6 +1066,24 @@
   .rating {
     display: flex;
     gap: 0.3rem;
+  }
+}
+@media screen and (min-width:200px) and (max-width:290px) {
+  .image {
+    padding-top: 0rem;
+  }
+  .old-discount {
+    flex-wrap: wrap;
+  }
+  .child {
+    justify-content: flex-start;
+    padding-top: 0.8rem;
+  }
+}
+@media screen and (min-width:400px) and (max-width:450px) {
+  .child {
+    height: 100%;
+    width: 80%;
   }
 }
 @media screen and (min-width:200px) and (max-width:350px) {
@@ -1038,6 +1118,9 @@
   }
   .nav_items {
     font-size: 2.5rem;
+  }
+  .content {
+    height: 40rem;
   }
   .label {
     font-size: 1.5rem;
@@ -1085,7 +1168,7 @@
   .logo {
     font-size: 2.5rem;
   }
-  .label_two {
+  .hot_promo{
     font-size: 1.5rem;
   }
   .name-three {
@@ -1189,7 +1272,7 @@
     width: 7vw;
   }
   .e-com {
-    width: 30%;
+    width: 10%;
   }
   .horizontal {
     margin-bottom: 2rem ;
@@ -1205,7 +1288,7 @@
     left: 1.5rem;
   }
   .rectangle {
-    width: 90%;
+    width: 50%;
   }
   .logo-two {
     width: 15%;
@@ -1227,6 +1310,12 @@
   .blue_page {
     height: 35rem;
   }
+  .half-one {
+    height: 28rem;
+  }
+  .footer_content {
+    height: 19rem;
+  }
 }
 
 @media screen and (min-width:651px) and (max-width:850px) {
@@ -1244,6 +1333,9 @@
   .nav_items {
     font-size: 2rem;
   }
+  .content {
+    height: 30rem;
+  }
   .label {
     font-size: 1.2rem;
   }
@@ -1252,9 +1344,6 @@
   }
   .flash_sale {
     font-size: 3.5rem;
-    position: absolute;
-    top: 30%;
-    left: 5%;
   }
   .products {
     width: 100%;
@@ -1298,7 +1387,7 @@
   .logo {
     font-size: 2rem;
   }
-  .label_two {
+  .hot_promo {
     font-size: 1.3rem;
     width: 3.5rem;
     height: 2rem;
@@ -1419,7 +1508,7 @@
     font-size: 1.5rem;
   }
   .e-com {
-    width: 30%;
+    width: 10%;
   }
   .label {
     padding-top: 1rem;
@@ -1435,7 +1524,7 @@
     left: 1.5rem;
   }
   .rectangle {
-    width: 90%;
+    width: 50%;
   }
   .logo-two {
     width: 15%;
@@ -1453,6 +1542,18 @@
   }
   .blue_page {
     height: 30rem;
+  }
+  .half-one {
+    height: 25rem;
+  }
+  .footer_content {
+    height: 16rem;
+  }
+  .PRODUCT {
+    gap: 0rem;
+  }
+  .line-div {
+    height: 8rem;
   }
 }
 
@@ -1473,6 +1574,9 @@
     display: flex;
     justify-content: space-around;
   }
+  .content {
+    height: 28rem;
+  }
   .label {
     font-size: 1rem;
   }
@@ -1481,7 +1585,6 @@
   }
   .flash_sale {
     font-size: 3rem;
-    padding-left: 2%;
   }
   .bag,
   .shoe,
@@ -1525,7 +1628,7 @@
   .logo {
     font-size: 1.5rem;
   }
-  .label_two {
+  .hot_promo {
     font-size: 1rem;
     width: 3rem;
     height: 2rem;
@@ -1537,11 +1640,11 @@
     font-size: 1rem;
   }
   .old-price-two {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
   .discount-two {
     font-size: 1rem;
-    padding-top: 0.1rem;
+    padding-top: 0.5rem;
   }
   .load_more {
     font-size: 1.5rem;
@@ -1649,7 +1752,7 @@
     font-size: 1rem;
   }
   .e-com {
-    width: 30%;
+    width: 10%;
   }
   .number {
     width: 1.5rem;
@@ -1675,7 +1778,7 @@
     padding-left: 1rem;
   }
   .rectangle {
-    width: 90%;
+    width: 50%;
   }
   .logo-two {
     width: 20%;
@@ -1697,6 +1800,15 @@
   .blue_page {
     height: 23rem;
   }
+  .half-one {
+    height: 22rem;
+  }
+  .footer_content {
+    height: 15rem;
+  }
+  .line-div {
+    height: 8rem;
+  }
 }
 
 @media screen and (min-width:1500px) {
@@ -1709,11 +1821,6 @@
   }
   .ecomm-logo {
     padding-left: 8.5%;
-  }
-  .flash_sale {
-    position: absolute;
-    top: 30%;
-    left: 8%;
   }
   .page-one {
     width: 1500px;
@@ -1763,14 +1870,14 @@
     width: 2rem;
   }
   .rectangle {
-    width: 90%;
+    width: 40%;
   }
   .BLUE {
     width: 100%;
     transform: translateY(-20%);
   }
   .e-com {
-    width: 40%;
+    width: 10%;
   }
   .rating {
     display: flex;
@@ -1791,6 +1898,11 @@
   .blue_page {
     width: 100%;
     height: 55rem;
+  }
+  .line-div {
+    width: 1500px;
+    height: 12rem;
+    margin: auto;
   }
 }
 
@@ -1813,13 +1925,11 @@
   .ecomm-logo {
    padding-left: 5.5%;
   }
-  .Image {
-    position: relative;
+  .half-one {
+    height: 23rem;
   }
-  .flash_sale {
-    position: absolute;
-    top: 30%;
-    left: 3%;
+  .footer_content {
+    height: 18rem;
   }
 }
 
@@ -1846,14 +1956,6 @@
    .ecomm-logo {
     padding-left: 8%;
   }
-  .Image {
-    position: relative;
-  }
-  .flash_sale {
-    position: absolute;
-    top: 30%;
-    left: 7%;
-  }
 }
 
 @media screen and (min-width:851px) and (max-width:900px) {
@@ -1862,14 +1964,6 @@
   }
    .ecomm-logo {
     padding-left: 3%;
-  }
-  .Image {
-    position: relative;
-  }
-  .flash_sale {
-    position: absolute;
-    top: 30%;
-    left: 2.5%;
   }
 }
 
@@ -1883,14 +1977,6 @@
   }
    .ecomm-logo {
     padding-left: 8.5%;
-  }
-  .Image {
-    position: relative;
-  }
-  .flash_sale {
-    position: absolute;
-    top: 30%;
-    left: 8%;
   }
 }
 
@@ -1911,18 +1997,26 @@
 
 @media screen and (min-width:700px) and (max-width:750px) {
   .navbar-one {
-    padding-left: 3%;
+    padding-left: 6%;
+    padding-right: 2%;
+  }
+  .navbar-two {
+    padding-right: 4.5%;
   }
    .ecomm-logo {
-    padding-left: 4%;
+    padding-left: 7%;
   }
-  .Image {
-    position: relative;
+  .bag-product {
+    width: 21rem;
+    height: 23rem;
   }
-  .flash_sale {
-    position: absolute;
-    top: 30%;
-    left: 4%;
+  .shoe-product {
+    width: 21rem;
+    height: 23rem;
+  }
+  .redshoe-product {
+    width: 21rem;
+    height: 23rem;
   }
 }
 @media screen and (min-width:800px) and (max-width:850px) {
@@ -1931,14 +2025,6 @@
   }
    .ecomm-logo {
     padding-left: 9.5%;
-  }
-  .Image {
-    position: relative;
-  }
-  .flash_sale {
-    position: absolute;
-    top: 30%;
-    left: 9%;
   }
   .content-two {
     padding-left: 9%;
@@ -1951,14 +2037,6 @@
   }
    .ecomm-logo {
     padding-left: 4%;
-  }
-  .Image {
-    position: relative;
-  }
-  .flash_sale {
-    position: absolute;
-    top: 30%;
-    left: 3.5%;
   }
 }
 
@@ -1973,14 +2051,6 @@
    .ecomm-logo {
     padding-left: 0.5%;
     gap: 0.5rem;
-  }
-  .Image {
-    position: relative;
-  }
-  .flash_sale {
-    position: absolute;
-    top: 30%;
-    left: -2%;
   }
   .lang,
   .currency {
